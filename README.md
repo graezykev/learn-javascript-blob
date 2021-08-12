@@ -1,2 +1,2 @@
 # articles
-[Javascript Blobs](./javascript-blobs/README.md)
+[Javascript Blobs](javascript-blobs/README.md)
