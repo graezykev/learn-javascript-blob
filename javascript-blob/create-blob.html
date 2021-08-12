@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <textarea id="textarea1" placeholder="textarea 1"></textarea>
+  <button id="createblobfromtext">create blob from text(above)</button>
+
+  <br /><br />
+
+  <input type="file" name="file1" />
+  <button id="createblobfromblob">create blob from blob(clone file text content)</button>
+
+  <br /><br />
+
+  <input type="file" name="file2" />
+  <button id="createblobfromarraybuffer">create blob from file ArrayBuffer</button>
+
+  <br /><br />
+
+  <input type="file" name="file3" />
+  <button id="createblobfrom-file-arraybufferview">create blob from file ArrayBufferView</button>
+
+  <br /><br />
+
+  <textarea id="textarea2" placeholder="textarea 2"></textarea>
+  <button id="createblobfrom-text-arraybufferview">create blob from Text ArrayBufferView</button>
+
+  <script src="./create-blob.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div style="color: red;">Open Console to see detail infomation</div>
+    <br><br>
+
+    <button onclick="fetchJson()">fetch json</button>
+    <textarea id="json"></textarea>
+    <br><br>
+
+    <button onclick="fetchText()">fetch text</button>
+    <textarea id="text"></textarea>
+    <br><br>
+
+    <button onclick="fetchJsonStream()">load json streams (of only one chunk)</button>
+    <div id="json-chunks">chunks: </div>
+    <textarea id="json-stream"></textarea>
+    <br><br>
+
+    <button onclick="fetchLargeJsonStream()">load large json streams (of multiple chunks</button>
+    <div id="large-json-chunks">chunks: </div>
+    <textarea id="large-json-stream"></textarea>
+    <br><br>
+
+    <br><br>
+    <button id="playVideo" onclick="fetchVideoStream()">load video streams and put them into a video blob</button>
+    <br>
+    <div id="video-chunks">chunks: </div>
+    <video id="video"></video>
+
+    <script src="./stream.js"></script>
+  </body>
+</html>

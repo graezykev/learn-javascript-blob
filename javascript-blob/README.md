@@ -1,0 +1,34 @@
+# JavaScript Blob
+
+- 1. [What is Blob](./what-is-blob.md)
+- 2. [What we can do with Blob(s)](./what-we-can-do-with-blob.md)
+  - get name, size, type, last modified timestamp
+  - get text
+  - get Array Buffer
+  - get partial of a Blob
+  - get Blob stream
+- 3. [How to create Blob(s)](./how-do-we-create-blob.md)
+  - by text
+  - by blob
+  - by ArrayBuffer
+  - by ArrayBufferView(of a file)
+  - by ArrayBufferView(of some some specific text)
+- 4. [ArrayBuffer](./what-is-array-buffer.md)
+  - what's ArrayBuffer
+  - ArrayBufferView
+    - TypeArray(s)
+    - DataView
+  - UTF-8: one of the formats to read/make ArrayBuffer
+- 5. [FileReader](./what-is-file-reader.md)
+  - read text
+  - read base64(DataURL)
+  - read ArrayBuffer
+  - read binary string
+  - get Blob URL
+  - read File slice by slice
+- 6. [Download Blob](./how-to-download-a-blob.md)
+  - from DataURL
+  - from base64
+  - from ArrayBufferView(byte array)
+  - download File slice by slice
+- 7. [Readable Stream](./what-is-stream.md)
