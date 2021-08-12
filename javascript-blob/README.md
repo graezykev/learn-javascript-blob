@@ -1,4 +1,4 @@
-# JavaScript Blob
+# Learn JavaScript Blob
 
 - 1. [What is Blob](./what-is-blob.md)
 - 2. [What we can do with Blob(s)](./what-we-can-do-with-blob.md)
