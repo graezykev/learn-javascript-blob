@@ -1,2 +1,3 @@
 # articles
-[Javascript Blobs](./javascript-blob/README.md)
+
+[Learn Javascript Blob](./javascript-blob/README.md)
