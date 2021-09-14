@@ -32,3 +32,4 @@
   - from ArrayBufferView(byte array)
   - download File slice by slice
 - 7. [Readable Stream](./what-is-stream.md)
+  - [Stream Core Concepts](./learn-stream-core-concepts.md)
