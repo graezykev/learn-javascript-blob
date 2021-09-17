@@ -1,4 +1,4 @@
-const mimeCodec = 'video/mp4; codecs="avc1.4D401F"'
+const mimeCodec = 'video/mp4; codecs=avc1.42E01E, mp4a.40.2'
 console.log(MediaSource.isTypeSupported(mimeCodec)) // Check that browser has support for media codec
 
 const mediaSource = new MediaSource() // mediaSource.readyState === 'closed'
@@ -25,10 +25,10 @@ function handleSourceOpen() {
 
 // video segments
 var queue = []
-queue.push('https://testcontent.eyevinn.technology/mse-tutorial/vinn-video=1660000.dash') // header
-queue.push('https://testcontent.eyevinn.technology/mse-tutorial/vinn-video=1660000-0.dash')
-queue.push('https://testcontent.eyevinn.technology/mse-tutorial/vinn-video=1660000-25600.dash')
-queue.push('https://testcontent.eyevinn.technology/mse-tutorial/vinn-video=1660000-51200.dash')
+// duration = 60s
+queue.push('https://nickdesaulniers.github.io/netfix/demo/frag_bunny.mp4')
+// duration = 6s
+queue.push('https://raw.githubusercontent.com/w3c/web-platform-tests/master/media-source/mp4/test.mp4')
 
 function iter() {
   url = queue.shift()
@@ -49,6 +49,13 @@ function iter() {
 function fetchSegmentAndAppend(segmentUrl, callback) {
   fetchArrayBuffer(segmentUrl, function (buf) {
     sourceBuffer.addEventListener('updateend', function (ev) {
+
+      segmentUrl.indexOf('frag_bunny') !== -1 &&
+        (sourceBuffer.timestampOffset += 60)
+
+      segmentUrl.indexOf('test') !== -1 &&
+        (sourceBuffer.timestampOffset += 6)
+
       callback()
     })
     sourceBuffer.addEventListener('error', function (ev) {
