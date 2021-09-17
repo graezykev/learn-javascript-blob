@@ -38,8 +38,8 @@ function iter() {
     if (err) {
       console.error(err)
     } else {
-      iter()
-      // setTimeout(iter, 5000)
+      // iter() // fetch next segment right now
+      setTimeout(iter, 15000) // fetch next segment in 15 seconds
     }
   })
 }
