@@ -29,7 +29,7 @@ const stream = new ReadableStream({
 
 The first parameter is required, which is an object contains 5 members, among which the `start` member is required.
 
-I'm not going to elabrate all the 5 prameter members here, only the most important 3:
+I'm not going to elabrate all the 5 prameter members here, only the most important 3 of them:
 
 - `start(controller)` —— A method is called once, at the time the stream is constructed, inside this method you need to sets up the stream functionality.
 - `pull(controller)` —— This method is called repeatedly until the stream’s internal queue is full, to continue enqueueing more chunks.
