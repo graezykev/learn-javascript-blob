@@ -21,7 +21,7 @@ mediaSource.addEventListener('sourceopen', () => {
   }
 })
 
-// video segments
+// video segments (or let's say, chunks)
 var queue = []
 // duration = 6s
 queue.push('./test.mp4')
