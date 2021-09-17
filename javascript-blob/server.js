@@ -36,7 +36,8 @@ http
 
       '.wav': 'audio/wav',
       '.mp3': 'audio/mpeg',
-      '.mp4': 'video/mp4'
+      '.mp4': 'video/mp4',
+      '.ts': 'video/mp2t'
     }
 
     fs.exists(pathname, function (exist) {

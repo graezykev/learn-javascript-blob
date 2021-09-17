@@ -46,6 +46,10 @@ Only one reader can read a stream at a time, that is to say, on a reader starts 
 
 If you want another reader to read the stream, you need to cancel the former reader first.
 
+![readablestream](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts/readable_streams.png)
+
+- (image from MDN docs https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts) -
+
 ### Teeing
 
 Though only one reader can read one stream, we can still split one stream into two, which is `teeing` a stream via the `ReadableStream.tee` API.
@@ -75,6 +79,16 @@ Whatever kind of transform stream it is, the core use of `TransformStream` is **
 ## Pipe chains
 
 It's possible to pipe streams into one another.
+
+We use `ReadableStream.pipeThrough(TransformStream)` to pipe a `ReadableStream` through `TransformStream`.
+
+Like a treadmill, the `TransformStream` constantly takes data in and transforms it to a new state, and pipe them to the `ReadableStream`.
+
+And, we use `ReadableStream.pipeTo(WritableStream)` to pipe the ReadableStream to a WritableStream, which is the end point of the pipe chain.
+
+![pipe](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts/pipechain.png)
+
+- (image from MDN docs https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts) -
 
 ## Queuing strategies
 
