@@ -20,6 +20,6 @@ By doing this, we can make lots of imaginative things happend, such as sending a
 
 ## readable stream
 
-get a [readable stream](./blob.js#L42) of the file. Actually, this is another way to read blobs slice by slice (chunk by chunk). Similarly, I'll elaborate `Readable Stream` later.
+get a [readable stream](./blob.js#L42) of the file. Actually, this is another way to read blobs slice by slice (chunk by chunk). Similarly, I'll elaborate [`Readable Stream`](./what-is-stream.md) later.
 
 [Next Chapter: How do we create Blob(s)](./how-do-we-create-blob.md)

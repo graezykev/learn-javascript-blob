@@ -185,4 +185,4 @@ Whenever a chunk comes, put it into a temporary array.
 
 Finally, put the chunks into a blob, and use the HTML tag `<video />` to handle playing of the video resource.
 
-[Next Chapter: Head First into core stream concepts](./learn-stream-core-concepts.md)
+[Next Chapter: Head First to core Stream concepts](./learn-stream-core-concepts.md)

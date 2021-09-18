@@ -223,4 +223,4 @@ function downloadFileFromArrayBuffer () {
 }
 ```
 
-[Next Chapter: ReadableStream](./what-is-stream.md)
+[Next Chapter: Streams](./what-is-stream.md)

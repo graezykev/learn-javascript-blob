@@ -1,4 +1,4 @@
-# 8. Learn stream core concepts
+# 8. Head First to Stream core concepts
 
 In last chapter [A quick glimpse of Stream](./what-is-stream.md), we demonstrated how `Stream` works: The `response` body returned by a successful `fetch` request can be exposed as a `ReadableStream`, and you can then read it using a reader created with `ReadableStream.getReader()`, then you can get chunk datas (`Uint8Array`) by `reader.read()`. Finally, assemble the chunks into a `Blob`.
 
