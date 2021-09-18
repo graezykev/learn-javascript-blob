@@ -110,4 +110,4 @@ When the queue reaches high water mark, the stream sends a `signal` to the origi
 
 The API `ReadableStreamDefaultController.desiredSize` is used to query the desired size, if it is too low, our ReadableStream can tell its underlying source to stop sending data. Later, if the strem wants to receive data again, we can use `readableStream.pull()` to the underlying source to feed data again.
 
-[Next Chapter: Using Stream](./how-to-further-use-stream.md)
+[Next Chapter: Build your Stream - Make Amazting Happens](./how-to-further-use-stream.md)

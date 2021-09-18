@@ -1,4 +1,4 @@
-# 9. Using Streams in more Powerful Ways
+# 9. Build your Stream - Make Amazting Happens
 
 ## Creating your own ReadableStream
 
@@ -39,7 +39,7 @@ I'm not going to elabrate all the 5 prameter members here, only the most importa
 
 - `cancel()` —— If called, the stream sends a `stop` signal to the underlying data source, and release access to the stream source.
 
-## Combine you own chunks
+## Build Your own Chunks
 
 In the example below, we're going to combine many videos into one and play them in one `<video />`, depending on the powerfull `ReadableStream` and [MSE (Media Source Extensions)](https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API).
 
@@ -97,7 +97,7 @@ initMediaSourceExtention()
 
 ### Step by Step
 
-See all codes of how to [combine multiple videos into one stream](./stream/combine-multiple-videos-into-one-stream.js).
+See all codes of how to [combine multiple videos into one stream](./stream/combine-multiple-videos-into-one-stream.js), we're going to explain the main steps below.
 
 Our way of doing this is, firstly, we may prepare several (mp4) videos files' url, In this scenario, these videos, become the chunks of our `ReadableStream`.
 
