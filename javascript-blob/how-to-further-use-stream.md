@@ -95,6 +95,8 @@ function initMediaSourceExtention() {
 initMediaSourceExtention()
 ```
 
+I have a nore understandable demo of MSE [here](./stream/mse-load-multiple-video-stream-segments.js).
+
 ### Chunks: Step by Step
 
 See all codes of how to [combine multiple videos into one stream](./stream/combine-multiple-videos-into-one-stream.js), we're going to explain the main steps below.
@@ -199,6 +201,18 @@ The lines end with `.ts` are the path(url) of the segments of the video.
 Let's see this live demo [https://hls-js.netlify.app/demo/](https://hls-js.netlify.app/demo/)
 
 ![y](https://tva1.sinaimg.cn/large/008i3skNgy1guktqignl1g60mo0j97wj02.gif)
+
+The animation above have given us a visualized explanation on how an HLS video stream is loaded.
+
+Firstly, it download the `.m3u8`, which is the manifest, and traverse the `.ts` list inside it, in this way our program knows all chunks we need to load and their sequence.
+
+Next, what is needed to do is download the `.ts` files in accordance with their sequence, and put those chunks into a `ReadableStream`, and feed the stream to a `MSE` container, that's so simple.
+
+If you have read the previous part of `Chunks: Step by Step`, you'll have know how it works.
+
+> Decoding `.ts`(`video/mp2t`) is kind of tricky actually, I don't want to talk too much about this topic, for your curiosity you can refer to `mux.js` [https://github.com/videojs/mux.js/#mpeg2-ts-to-fmp4-transmuxer](https://github.com/videojs/mux.js/#mpeg2-ts-to-fmp4-transmuxer)
+
+Of course it's not that simple, but I've tried to simplized the whole procedure, and I think that's enough to make a brief idea of how HLS and streams work on web.
 
 ### `YouTube` playbacks
 
