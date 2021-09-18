@@ -1,6 +1,6 @@
 # Archived Articles
 
-- [Learn Javascript Blob](./javascript-blob/README.md)
+- Series: [Learn Javascript Blob](./javascript-blob/README.md)
   - 1. [What is Blob](./javascript-blob/what-is-blob.md)
   - 2. [What we can do with Blob(s)](./javascript-blob/what-we-can-do-with-blob.md)
   - 3. [How do we create Blob(s)](./javascript-blob/how-do-we-create-blob.md)
