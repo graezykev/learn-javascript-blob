@@ -200,7 +200,7 @@ The lines end with `.ts` are the path(url) of the segments of the video.
 
 Let's see this live demo [https://hls-js.netlify.app/demo/](https://hls-js.netlify.app/demo/)
 
-![y](https://tva1.sinaimg.cn/large/008i3skNgy1guktqignl1g60mo0j97wj02.gif)
+![y](./hls.gif)
 
 The animation above have given us a visualized explanation on how an HLS video stream is loaded.
 
@@ -226,6 +226,6 @@ Not like `hls.js` downloads `.ts` file one by one, YouTube downloads playbacks o
 
 Actually, those playbacks are also small video segments (`audio/webm`) of the whole video.
 
-![image-2021091824530755 pm](https://tva1.sinaimg.cn/large/008i3skNgy1guks30npthj618w0mbn3q02.jpg)
+![image-2021091824530755 pm](./youtube.jpeg)
 
 In principle, it's a much better way to play along with downloading video segments, instead of downloading a whole large video at a time, it's `Stream` make all these happen.
