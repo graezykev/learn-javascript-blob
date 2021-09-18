@@ -148,8 +148,22 @@ while (true) {
 
 ### In a nutshell
 
-## More similar examples
+## More Stream Applications
 
-`Hls.js`
+### `Hls.js`
 
-`Youtube` playbacks
+### `YouTube` playbacks
+
+Let's take a look at what happen when watching a YouTube video.
+
+As time goes by, the page keep loading some playback files.
+
+![comment3](https://tva1.sinaimg.cn/large/008i3skNgy1guksawsfgag616f0mekjz02.gif)
+
+Not like `Hls.js` downloads `.ts` file one by one, YouTube downloads playbacks one by one.
+
+Actually, those playbacks are also small video segments (`audio/webm`) of the whole video.
+
+![image-2021091824530755 pm](https://tva1.sinaimg.cn/large/008i3skNgy1guks30npthj618w0mbn3q02.jpg)
+
+In principle, it's a much better way to play along with downloading video segments, instead of downloading a whole large video at a time, it's `Stream` make all these happen.
