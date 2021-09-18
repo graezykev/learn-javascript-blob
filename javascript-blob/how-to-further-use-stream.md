@@ -97,7 +97,7 @@ initMediaSourceExtention()
 
 ### Step by Step
 
-See all codes of how to [combine multiple videos into one stream](./combine-multiple-videos-into-one-stream.js).
+See all codes of how to [combine multiple videos into one stream](./stream/combine-multiple-videos-into-one-stream.js).
 
 Our way of doing this is, firstly, we may prepare several (mp4) videos files' url, In this scenario, these videos, become the chunks of our `ReadableStream`.
 
