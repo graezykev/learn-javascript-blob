@@ -39,7 +39,7 @@ I'm not going to elabrate all the 5 prameter members here, only the most importa
 
 - `cancel()` —— If called, the stream sends a `stop` signal to the underlying data source, and release access to the stream source.
 
-## Build Your own Chunks
+## Load and Build Your own Chunks
 
 In the example below, we're going to combine many videos into one and play them in one `<video />`, depending on the powerfull `ReadableStream` and [MSE (Media Source Extensions)](https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API).
 
@@ -95,7 +95,7 @@ function initMediaSourceExtention() {
 initMediaSourceExtention()
 ```
 
-### Step by Step
+### Chunks: Step by Step
 
 See all codes of how to [combine multiple videos into one stream](./stream/combine-multiple-videos-into-one-stream.js), we're going to explain the main steps below.
 
@@ -150,7 +150,49 @@ while (true) {
 
 ## More Stream Applications
 
-### HLS(HTTP Live Streaming) and `.m3u8` and `.ts` - `hls.js`
+### HLS & `.m3u8` & `.ts` - `hls.js`
+
+### Short Introduction to HLS (HTTP Live Streaming)
+
+includes 2 main parts:
+
+- **manifest**: The manifest (a `.m3u8` file) will declare the segment list of a large video.
+- **segment**: Every video segment is a `.ts` (`video/mp2t` mostly) file, by downloading and playing `.ts` one by one, playing a large video becomes playing some small videos.
+
+Let's see what's inside a `.m3u8` file:
+
+```shell
+curl https://replay-aws.livestream.shopee.com/2021-09-17T10/id-LS-10361506-1631847164.m3u8
+```
+
+output:
+
+```txt
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-VERSION:3
+#EXT-X-ALLOW-CACHE:YES
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-TARGETDURATION:60
+#EXT-X-PROGRAM-DATE-TIME:2021-09-17T10:51:22+08:00
+#EXTINF:12.841,
+17-10-51-22-id-live-818489220452391-10361506-0.ts
+#EXTINF:13.207,
+17-10-51-35-id-live-818489220452391-10361506-1.ts
+#EXTINF:12.743,
+17-10-51-47-id-live-818489220452391-10361506-2.ts
+#EXTINF:12.601,
+17-10-52-00-id-live-818489220452391-10361506-3.ts
+#EXTINF:12.708,
+17-10-52-13-id-live-818489220452391-10361506-4.ts
+#EXTINF:13.003,
+17-10-52-26-id-live-818489220452391-10361506-5.ts
+#EXTINF:0.985,
+17-10-52-39-id-live-818489220452391-10361506-6.ts
+#EXT-X-ENDLIST
+```
+
+### How `hls.js` works
 
 ### `YouTube` playbacks
 
