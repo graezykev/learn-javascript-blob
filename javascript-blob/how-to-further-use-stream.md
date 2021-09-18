@@ -192,7 +192,13 @@ output:
 #EXT-X-ENDLIST
 ```
 
+The lines end with `.ts` are the path(url) of the segments of the video.
+
 ### How `hls.js` works
+
+Let's seee this live demo [https://hls-js.netlify.app/demo/](https://hls-js.netlify.app/demo/)
+
+![y](https://tva1.sinaimg.cn/large/008i3skNgy1guktqignl1g60mo0j97wj02.gif)
 
 ### `YouTube` playbacks
 
