@@ -150,7 +150,7 @@ while (true) {
 
 ## More Stream Applications
 
-### `Hls.js`
+### HLS(HTTP Live Streaming) and `.m3u8` and `.ts` - `hls.js`
 
 ### `YouTube` playbacks
 
@@ -160,7 +160,7 @@ As time goes by, the page keep loading some playback files.
 
 ![comment3](https://tva1.sinaimg.cn/large/008i3skNgy1guksawsfgag616f0mekjz02.gif)
 
-Not like `Hls.js` downloads `.ts` file one by one, YouTube downloads playbacks one by one.
+Not like `hls.js` downloads `.ts` file one by one, YouTube downloads playbacks one by one.
 
 Actually, those playbacks are also small video segments (`audio/webm`) of the whole video.
 
