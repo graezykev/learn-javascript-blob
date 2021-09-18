@@ -220,7 +220,7 @@ Let's take a look at what happen when watching a YouTube video.
 
 As time goes by, the page keep loading some playback files.
 
-![comment3](https://tva1.sinaimg.cn/large/008i3skNgy1guksawsfgag616f0mekjz02.gif)
+![youtube-streams](https://tva1.sinaimg.cn/large/008i3skNgy1guksawsfgag616f0mekjz02.gif)
 
 Not like `hls.js` downloads `.ts` file one by one, YouTube downloads playbacks one by one.
 
