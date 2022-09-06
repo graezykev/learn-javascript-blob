@@ -23,6 +23,9 @@ mediaSource.addEventListener('sourceopen', () => {
 
 // video segments (or let's say, chunks)
 var queue = []
+// duration = 10s
+// queue.push('./a.mp4') // this does not work https://stackoverflow.com/questions/22996665/unable-to-get-mediasource-working-with-mp4-format-in-chrome
+queue.push('./3.mp4')
 // duration = 6s
 queue.push('./test.mp4')
 // duration = 60s
@@ -54,6 +57,9 @@ function fetchSegmentAndAppend(segmentUrl, callback) {
 
       segmentUrl.indexOf('test') !== -1 &&
         (sourceBuffer.timestampOffset += 6)
+      
+      segmentUrl.indexOf('3.mp4') !== -1 &&
+        (sourceBuffer.timestampOffset += 11)
 
       callback()
     })
