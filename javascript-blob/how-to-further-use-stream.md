@@ -1,4 +1,4 @@
-# 9. Build your Stream - Make Amazting Happens
+# 9. Build your Stream - Make Amazing Happens
 
 ## Creating your own ReadableStream
 
