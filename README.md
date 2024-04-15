@@ -1,4 +1,4 @@
-# Archived Articles
+# Learn Javascript Blob
 
 - Series: [Learn Javascript Blob](./javascript-blob/README.md)
   - 1. [What is Blob](./javascript-blob/what-is-blob.md)
@@ -9,4 +9,4 @@
   - 6. [Download Blob](./javascript-blob/how-to-download-a-blob.md)
   - 7. [A quick glimpse of Stream](./javascript-blob/what-is-stream.md)
   - 8. [Head First to Stream core concepts](./javascript-blob/learn-stream-core-concepts.md)
-  - 9. [Build your Stream - Make Amazting Happens](./javascript-blob/how-to-further-use-stream.md)
+  - 9. [Build your Stream - Make Amazing Happens](./javascript-blob/how-to-further-use-stream.md)
